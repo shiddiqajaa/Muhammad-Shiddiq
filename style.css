@@ -2194,3 +2194,26 @@ body.has-announcement {
         align-items: center !important;
     }
 }
+
+.logo-top img {
+    width: 60px !important;    
+    height: 60px !important;   
+    border-radius: 50% !important;
+    object-fit: cover !important;
+}
+
+@media screen and (max-width: 768px) {
+    #name {
+        font-size: 4.5rem !important; 
+    }
+    #work {
+        font-size: 4rem !important;
+    }
+    
+    /* 3. Merapatkan navbar ke kanan agar tidak ada celah kosong */
+    .navbar {
+        width: 95% !important; 
+        margin: 0 auto !important;
+        padding-right: 20px !important;
+    }
+}
