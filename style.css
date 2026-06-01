@@ -2180,3 +2180,17 @@ body.has-announcement {
         line-height: 1.4;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .about-info p {
+        text-align: left !important;
+        font-size: 1.4rem !important;
+        line-height: 1.6 !important;
+        word-wrap: break-word !important;
+    }
+    
+    .info-dp-section {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+}
