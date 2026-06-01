@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- 
+
+██╗░░░██╗██╗███╗░░██╗░█████╗░██████╗░
+██║░░░██║██║████╗░██║██╔══██╗██╔══██╗
+╚██╗░██╔╝██║██╔██╗██║██║░░██║██║░░██║
+░╚████╔╝░██║██║╚████║██║░░██║██║░░██║
+░░╚██╔╝░░██║██║░╚███║╚█████╔╝██████╔╝
+░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚════╝░╚═════╝░
+░░░░░██╗░█████╗░███╗░░██╗░██████╗░██╗██████╗░
+░░░░░██║██╔══██╗████╗░██║██╔════╝░██║██╔══██╗
+░░░░░██║███████║██╔██╗██║██║░░██╗░██║██║░░██║
+██╗░░██║██╔══██║██║╚████║██║░░╚██╗██║██║░░██║
+╚█████╔╝██║░░██║██║░╚███║╚██████╔╝██║██████╔╝
+░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝╚═════╝░
+What are you doing here?! you sneaky developer...
+-->
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#000" />
-  <meta property="og:title" content="Muhammad Shiddiq | Portfolio" />
-  <meta property="og:site_name" content="Muhammad Shiddiq" />
-  <title>Muhammad Shiddiq</title>
-  <link rel="icon" type="image/x-icon" href="src/png/diqq.png" />
-  
+  <meta property="og:image" content="https://v1.vinodjangid.site/src/png/Preview-card-min.png" />
+  <meta property="og:title" content="Vinod Jangid | Portfolio" />
+  <meta property="og:url" content="https://v1.vinodjangid.site" />
+  <meta property="og:site_name" content="Vinod Jangid Portfolio" />
+  <title>Vinod Jangid | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+  <!-- aos cdn -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
- 
+  <!-- stylesheet -->
   <link rel="stylesheet" href="style.css" />
-  
+  <!-- google fonts-->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
 
 <body class="body has-announcement">
   <audio loop="" id="audioPlayer" style="display: none">
-    <source src="src/mp3/shiddiq.mp3" type="audio/mp3" />
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
   </audio>
   <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript>
 
+  <!-- announcement Bar -->
   <div class="announcement-bar" id="announcement-bar">
     <div class="announcement-content">
+      <span class="announcement-emoji">🚀</span>
       <span class="announcement-text">
-        Muhammad Shiddiq
+        You're viewing the V1 portfolio. The redesigned V2 is now live at 
+        <a href="https://vinodjangid.site" target="_blank" rel="noopener noreferrer" class="announcement-link">
+          vinodjangid.site<svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a>!
       </span>
     </div>
   </div>
@@ -37,44 +61,46 @@
     <div class="cursor-outer" id="cursor-outer"></div>
 
     <div class="navbar" id="navbar">
-      <div class="hallo">Hallo</div>
+      <div class="hey">Hey!</div>
       <div class="logo" tabindex="0" aria-label="vinod jangid logo">
         <div class="logo-top">
-          <img src="src/png/diqq.png" alt="animation-head" id="nav-avatar"/>
+          <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar"/>
         </div>
       </div>
       <div class="navbar-tabs" id="navbar-tabs">
         <ul class="navbar-tabs-ul">
           <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
             <a href="#home" tabindex="0" aria-label="Home menu button">
-              Home
+              &#60;/Home&#62;
             </a>
           </li>
 
           <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
             <a href="#about" aria-label="about menu button">
-              AboutMe
+              &#60;/AboutMe&#62;
             </a>
           </li>
 
           <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
             <a href="#skills" aria-label="skills menu button">
-              Skills
+              &#60;/Skills&#62;
             </a>
           </li>
 
           <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
             <a href="#projects" aria-label="projects menu button">
-              Projects
+              &#60;/Projects&#62;
             </a>
           </li>
         </ul>
       </div>
-
+      <!-- navbar tabs ends -->
     </div>
   </header>
+  <!-- header ends here -->
 
   <main>
+    <!-- hamburger -->
     <div class="hamburger" id="hamburger" data-aos="fade">
       <div class="hamburgerbase">
         <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
@@ -89,106 +115,109 @@
       <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
         <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
           <a href="#home" tabindex="0" aria-label="Home menu button">
-            Home
+            &#60;/Home&#62;
           </a>
         </li>
 
         <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
           <a href="#about" tabindex="0" aria-label="about menu button">
-            AboutMe
+            &#60;/AboutMe&#62;
           </a>
         </li>
         <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
           <a href="#skills" tabindex="0" aria-label="skills menu button">
-            Skills
+            &#60;/Skills&#62;
           </a>
         </li>
         <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
           <a href="#projects" tabindex="0" aria-label="projects menu button">
-            Projects
+            &#60;/Projects&#62;
           </a>
         </li>
       </ul>
     </div>
+    <!-- mobile toggle menu ends -->
 
     <section class="landing-page-container" id="home">
       <div class="blob"></div>
 
       <div class="text-content">
         <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
-          <p class="jello">S</p>
+          <p class="jello">N</p>
           <p class="jello">a</p>
-          <p class="jello">y</p>
+          <p class="jello">m</p>
           <p class="jello">a</p>
+          <p class="jello">s</p>
+          <p class="jello">t</p>
+          <p class="jello">e</p>
+          <p class="jello">(</p>
+          <p class="jello">)</p>
+          <p class="jello">;</p>
+          &nbsp;
+          <p class="jello">I</p>
+          <p class="jello">'</p>
+          <p class="jello">m</p>
         </article>
         <article id="name" data-aos="fade-up" data-aos-delay="200">
-          <p class="jello">M</p>
-          <p class="jello">u</p>
-          <p class="jello">h</p>
-          <p class="jello">a</p>
-          <p class="jello">m</p>
-          <p class="jello">m</p>
-          <p class="jello">a</p>
+          <p class="jello">V</p>
+          <p class="jello">i</p>
+          <p class="jello">n</p>
+          <p class="jello">o</p>
           <p class="jello">d</p>
           &nbsp;
-          <p class="jello">S</p>
-          <p class="jello">h</p>
+          <p class="jello">J</p>
+          <p class="jello">a</p>
+          <p class="jello">n</p>
+          <p class="jello">g</p>
           <p class="jello">i</p>
           <p class="jello">d</p>
-          <p class="jello">d</p>
-          <p class="jello">i</p>
-          <p class="jello">q</p>
+          <p class="jello">.</p>
         </article>
 
         <article id="work" data-aos="fade-up" data-aos-delay="400">
           <div>
-            <p class="jello">w</p>
-            <p class="jello">e</p>
-            <p class="jello">b</p>
+            <p class="jello">I</p>
           </div>
           <div>
             <p class="jello">d</p>
             <p class="jello">e</p>
-            <p class="jello">v</p>
-            <p class="jello">e</p>
-            <p class="jello">l</p>
-            <p class="jello">o</p>
-            <p class="jello">p</p>
-            <p class="jello">e</p>
-            <p class="jello">r</p>
-          </div>
-          <div>
-            <p class="jello">c</p>
-            <p class="jello">y</p>
-            <p class="jello">b</p>
-            <p class="jello">e</p>
-            <p class="jello">r</p>
-          </div>
-          <div>
             <p class="jello">s</p>
-            <p class="jello">e</p>
-            <p class="jello">c</p>
-            <p class="jello">u</p>
-            <p class="jello">r</p>
             <p class="jello">i</p>
-            <p class="jello">t</p>
-            <p class="jello">y</p>
+            <p class="jello">g</p>
+            <p class="jello">n</p>
+          </div>
+          <div>
+            <p class="jello">&</p>
+          </div>
+          <div>
+            <p class="jello">c</p>
+            <p class="jello">o</p>
+            <p class="jello">d</p>
+            <p class="jello">e</p>
+          </div>
+          <div>
+            <p class="jello">f</p>
+            <p class="jello">o</p>
+            <p class="jello">r</p>
+          </div>
+          <div>
+            <p class="jello">w</p>
+            <p class="jello">e</p>
+            <p class="jello">b</p>
+            <p class="jello">.</p>
           </div>
         </article>
         <p id="info-para" data-aos="fade-up" data-aos-delay="600">
-          Developer yang berkomitmen menghadirkan platform digital berkinerja tinggi.
-          spesialis dalam membangun aplikasi web dari nol, menyusun logika pemrograman
-          yang efisien, serta melakukan analisis kerentanan pada suatu website untuk
-          memastikan agar sistem selalu aman dan terhindar dari ancaman siber.<br />
+          Web Developer with experience of Digital Concept Arts, Frontend Web
+          Designs. I Love fun Web UI, collaboration and making products.<br />
           <br />
-          Fokus utama saya dalam pemrogramanadalah membangun  suatu baris code yang rapi,
-          merancang pola desain yang mudah untuk dipahami, serta memastikan setiap interaksi
-          data berjalan secara aman dan tepat.
+          I value simple content structure, clean design patterns, and
+          thoughtful interactions.
         </p>
         <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
-          <a href="mailto:shiddiqajaa@gmail.com" tabindex="-1">
+          <a href="mailto:infovinodjangid@gmail.com" tabindex="-1">
             <button class="letsTalkBtn">
-              <p class="letsTalkBtn-text">Bussines Inquiries!</p>
+              <p class="letsTalkBtn-text">Let's Talk!</p>
               <span class="letsTalkBtn-BG"></span>
             </button></a>
           <div class="setting-container" id="setting-container">
@@ -209,15 +238,18 @@
                 class="needtobeinvert"></label>
             </div>
           </div>
+          <!-- setting div ends -->
         </div>
+        <!-- contact-btn-div -->
       </div>
-    
+     
     </section>
+    <!-- landing page ends here -->
     <section class="about-section-container" id="about" data-aos="fade-up">
       <div class="about-section">
         <div class="section-heading">
           <h2 class="section-heading-article" tabindex="0" aria-label="About me heading">
-            AboutMe
+            &#60;/AboutMe&#62;
           </h2>
           <p class="sectionHeadingP"></p>
         </div>
@@ -225,37 +257,46 @@
         <div class="info-dp-section">
           <div class="about-info">
             <p tabindex="0">
-              Developer yang berfokus pada pengembangan web dan keamanan siber serta inovatif dalam
-              mengembangkan antar muka, tepat satu tahun setelah saya lulus dari jenjang SMK, saya
-              mulai fokus mengembangkan diri saya dalam pemrograman serta mengikuti lomba-lomba,
-              webinar cyber security. yang dimana saya tekuni hingga saat ini, karna saya percaya
-              bahwa dunia teknologi ini semakin berkembang pesat dan canggih, maka dari itu saya
-              juga aktif melakukan pengujian celah keamanan untuk memastikan website itu aman atau
-              tidak dan berjalan standar perlindungan yang tinggi.
+              Hi! My name is Vinod. I'm a web developer and digital visual artist. I love creating things that exist on the internet. My interest in web development started in 2021 when I decided to upload my digital concept arts online.
             </p>
             <br />
             <p tabindex="0">
-              Saya juga sangat tertarik pada dunia Cyber Security serta
-              mencari sebuah celah keamanan pada suatu website yang dimana
-              di anggap rentan, dan juga selama proses ini melatih saya untuk
-              membangun, menganalisis, serta melindungi digital dari berbagai
-              celah kerentanan.
+              Instead of creating an online Concepts Art website, i started
+              enjoying web development. Creating custom things for web taught
+              me a lot about design & development!
             </p>
             <br />
+            <p tabindex="0">
+              My main focus these days is building interesting & creative web
+              designs, I like to code things from scratch, and enjoy bringing
+              ideas to life in the browser.
+            </p>
+             <!-- Resume button -->
+      <button class="resume-btn" id="resume-btn" onclick="openURL()">
+        <div class="sign">
+          <svg viewBox="0 0 640 512">
+            <path
+              d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+          </svg>
+        </div>
 
+        <div class="text">Resume</div>
+      </button>
           </div>
 
           <div class="dp" data-aos="fade-up">
-            <img src="src/webp/foto.jpeg" alt="Vinod Jangid" tabindex="0" aria-label="image of vinod" />
+            <img src="src/webp/vinod (2).webp" alt="Vinod Jangid" tabindex="0" aria-label="image of vinod" />
           </div>
         </div>
       </div>
+    </section>
+    <!-- about section ends  -->
 
     <section class="skills-section-container" id="skills">
       <div class="skills-section">
         <div class="section-heading" data-aos="fade-up">
           <h2 class="section-heading-article" tabindex="0" aria-label="skills heading">
-            Skills
+            &#60;/Skills&#62;
           </h2>
           <p class="sectionHeadingP"></p>
         </div>
@@ -282,8 +323,8 @@
             </li>
 
             <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/pyy.png" alt="tailwind skill" class="tech-stack-logo" />
-              <span class="tooltip">PYTHON</span>
+              <img src="./src/png/tailwind.png" alt="tailwind skill" class="tech-stack-logo" />
+              <span class="tooltip">TAILWIND</span>
             </li>
 
             <li class="tech-stack-box" data-aos="fade-up">
@@ -302,8 +343,8 @@
             </li>
 
             <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/kali.png" alt="astro skill" class="tech-stack-logo" />
-              <span class="tooltip">KALI LINUX</span>
+              <img src="./src/png/astro.png" alt="astro skill" class="tech-stack-logo" />
+              <span class="tooltip">ASTRO</span>
             </li>
 
             <li class="tech-stack-box" data-aos="fade-up">
@@ -312,30 +353,33 @@
             </li>
 
             <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/Csharp_Logo.png" alt="git skill" class="tech-stack-logo" />
-              <span class="tooltip">C#</span>
+              <img src="./src/png/gitlogo.png" alt="git skill" class="tech-stack-logo" />
+              <span class="tooltip">GIT</span>
             </li>
 
             <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/cpplogo.png" alt="tinacms skill" class="tech-stack-logo" />
-              <span class="tooltip">C++</span>
+              <img src="./src/png/tinacms.png" alt="tinacms skill" class="tech-stack-logo" />
+              <span class="tooltip">TINACMS</span>
             </li>
 
             <li class="tech-stack-box" data-aos="fade-up">
-              <img src="./src/png/bootstraplogo.png" alt="contentful skill" class="tech-stack-logo" />
-              <span class="tooltip">BOOTSTRAP</span>
+              <img src="./src/png/contentfulcms.png" alt="contentful skill" class="tech-stack-logo" />
+              <span class="tooltip">CONTENTFUL</span>
             </li>
+            <li class="tech-stack-box" data-aos="fade-up">
+              <img src="./src/png/figmalogo.png" alt="figma skill" class="tech-stack-logo" />
+              <span class="tooltip">FIGMA</span>
             </li>
           </ul>
         </div>
       </div>
     </section>
-  
+    <!-- skills section ends -->
     <section class="projects-section-container" id="projects">
       <div class="projects-section-div">
         <div class="section-heading" data-aos="fade-up">
           <h2 class="section-heading-article" tabindex="0" aria-label="My projects starts from here">
-            Projects
+            &#60;/Projects&#62;
           </h2>
           <p class="sectionHeadingP"></p>
         </div>
@@ -343,70 +387,78 @@
           <div data-aos="fade-up" class="project-box-wrapper">
             <div class="project-box project-box2" id="project-box2">
               <div class="info-div">
-                <article class="ProjectHeading">Lomba CTF 2025</article>
+                <img src="src/webp/asher-favicon.webp" alt="atomic asher website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">Atomic Asher Official Website</article>
                 <p class="ProjectDescription">
-                  Pada akhir Desember 2025 kemarin, saya menguji kemampuan siber saya 
-                  dengan megikuti kompetisi di Cyber Jawara CTF 
-                  ( Capture The Flag ), pengalaman ini melatih 
-                  pola pikir saya untuk menganalisis kelemahan sistem dari sudut pandang para peretas celah keamanan secara taktis, 
-                  dan menyelesaikan berbagai tantangan keamanan siber di lingkungan yang kompetitif.
+                  Atomic Asher: A sleek and modern company website built to reflect their mission, team, and work through a clean and professional digital presence.
                 </p>
                 <div class="project-buttons">
+                  <a href="https://atomicasher.com" target="_blank" class="cta"
+                    aria-label="Visit atomicasher Live">
+                    <span>Live view</span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
                       <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
                   </a>
                 </div>
               </div>
               <div class="image-div">
-                <img src="src/webp/lomba_jawara.jpeg" alt="atomicasher website preview image" />
+                <img src="src/webp/asher-preview.webp" alt="atomicasher website preview image" />
               </div>
             </div>
           </div>
+          <!-- ---------------------- -->
           <div data-aos="fade-up" class="project-box-wrapper">
             <div class="project-box project-box2" id="project-box2">
               <div class="info-div">
-                <article class="ProjectHeading">Lomba Bug Bounty 2026</article>
+                <img src="src/ico/stopscams-favicon.ico" alt="stopscams website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">StopScams.in</article>
                 <p class="ProjectDescription">
-                  Pada di bulan april tepatnya di tanggal 6-30 april saya mendaftarkan diri lomba
-                  Bug Bounty yang diselenggarakan oleh kementerian Pendidikan Dasar dan
-                  Menengah ( Kemendikdasmen ) melalui Pusdatin bersekala Nasional, dan di lanjutkan
-                  tahap pengujian nya pada tanggal 1 - 22 Mei 2026 sampai dimana saya menemukan
-                  berbagai celah keamanan dari Lab Kemendikdasmen berikan, terdapat sekitar 5
-                  celah keamanan yang saya temukan.
+                  StopScams: An AI-powered platform that detects scam messages and supports users through digital fraud with smart tools and real-time help.
                 </p>
                 <div class="project-buttons">
+                  <a href="https://stopscams.in" target="_blank" class="cta"
+                    aria-label="Visit stopscams Live">
+                    <span>Live view</span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
                   </a>
                 </div>
               </div>
               <div class="image-div">
-                <img src="src/webp/lomba.jpeg" alt="stopscams website preview image" />
+                <img src="src/webp/stopscams-preview.webp" alt="stopscams website preview image" />
               </div>
             </div>
           </div>
-          
+          <!-- ---------------------- -->
           <div data-aos="fade-up" class="project-box-wrapper">
             <div class="project-box project-box2" id="project-box2">
               <div class="info-div">
-                <article class="ProjectHeading">Full Stack Web Developer</article>
+                <img src="src/ico/notesync-favicon.ico" alt="notesync website favicon" class="faviconforProject" />
+                <article class="ProjectHeading">NoteSync</article>
                 <p class="ProjectDescription">
-                  Pada tanggal 29 Mei 2026, saya resmi bergabung dalam program Coding Camp powered 
-                  by DBS Foundation 2.0 melalui program intersif ini, saya berfokus untuk memperdalam
-                  materi coding tingkat lanjut ( advanced programming ) agar standar code yang saya
-                  buat ini sesuai dengan kebutuhan industri saat ini.
+                  Notesync: A note-taking app powered by Supabase, designed to sync and store your notes instantly with a smooth and minimal user interface.
                 </p>
                 <div class="project-buttons">
+                  <a href="https://github.com/vinodjangid07/notesync-supabase" target="_blank" class="github-redirect"
+                    aria-label="Visit Pexelicons on GitHub">
+                    <img src="src/svg/github.svg" alt="github redirect button" />
+                  </a>
+                  <a href="https://notesync-site.netlify.app/" target="_blank" class="cta"
+                    aria-label="Visit NoteSync Live">
+                    <span>Live view</span>
                     <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
                   </a>
                 </div>
               </div>
               <div class="image-div">
-                <img src="src/webp/pendaftaran.png" alt="NoteSync website preview image" />
+                <img src="src/webp/notesync-preview.webp" alt="NoteSync website preview image" />
               </div>
             </div>
           </div>
@@ -435,55 +487,6 @@
               </div>
             </div>
           </div>
-          <!-- ---------------------- -->
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <img src="src/webp/pexelicon-favicon.webp" alt="pexelicon website favicon" class="faviconforProject" />
-                <article class="ProjectHeading">Pexelicons</article>
-                <p class="ProjectDescription">
-                  Pexelicons: A world of personalized file folder icons to
-                  transform your PC into a reflection of your style.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://github.com/vinodjangid07/Pexelicons" target="_blank" class="github-redirect"
-                    aria-label="Visit Pexelicons on GitHub">
-                    <img src="src/svg/github.svg" alt="github redirect button" />
-                  </a>
-                  <a href="https://vinodjangid07.github.io/Pexelicons/" target="_blank" class="cta"
-                    aria-label="Visit Pexelicons Live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="image-div">
-                <img src="src/webp/Group 76.webp" alt="Pexelicon website preview image" />
-              </div>
-            </div>
-          </div>
-          <!-- --------------------- -->
-          <div data-aos="fade-up" class="project-box-wrapper">
-            <div class="project-box project-box2" id="project-box2">
-              <div class="info-div">
-                <img src="src/webp/lunetra-favicon.webp" alt="lunetra website favicon" class="faviconforProject" />
-                <article class="ProjectHeading">Lunetra Studio</article>
-                <p class="ProjectDescription">
-                  Lunetra Studio: A fashion-forward site showcasing elegant collections with modern design, built to highlight quality, story, and craftsmanship.
-                </p>
-                <div class="project-buttons">
-                  <a href="https://lunetra-studio.netlify.app/" target="_blank" class="cta"
-                    aria-label="Visit lunetra Live">
-                    <span>Live view</span>
-                    <svg viewBox="0 0 13 10" height="10px" width="15px">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                  </a>
-                </div>
               </div>
               <div class="image-div">
                 <img src="src/webp/lunetra-preview.webp" alt="Lunetra website preview image" />
