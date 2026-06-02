@@ -2233,6 +2233,21 @@ body.has-announcement {
         overflow-x: auto !important;
     }
 
+    .navbar {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+    }
+
+    .navbar-logo {
+        flex-shrink: 0 !important;
+        width: 45px !important;
+        height: 45px !important;
+        overflow: hidden !important;
+        border-radius: 50% !important;
+        margin-right: 10px !important;
+    }
+
     /* 2 */
     .navbar-tabs-ul li a {
         font-size: 1rem !important;
@@ -2252,19 +2267,21 @@ body.has-announcement {
     /* 4. Titik Putih Aktif (hanya untuk yang memiliki class activeThistab) */
     .navbar-tabs-ul li.activeThistab::before {
         content: "" !important;
-        display: block !important;
+        display: inline-flex !important;
+        vertical-align: middle !important;
+        margin-bottom: 1px !important;
         width: 8px !important; 
         height: 8px !important;
         background-color: white !important;
         border-radius: 50% !important;
-        margin-right: 8px !important; /* Jarak antara titik dan teks */
+        margin-right: 9px !important; /* Jarak antara titik dan teks */
         flex-shrink: 0 !important; /* Mencegah titik menjadi gepeng */
     }
 
     /* 5. Mengecilkan Box Blur (Navbar) agar tidak terlalu besar */
     .navbar {
-        padding: 10px !important;
-        backdrop-filter: blur(5px) !important; /* Blur lebih halus */
+        backdrop-filter: blur(15px) !important;
+        -webkit-backdrop-filter: blur(15px) !important; /* Blur lebih halus */
     }
 
     /* 6. Setiap LI sebagai kontainer flex agar titik dan teks sejajar */
