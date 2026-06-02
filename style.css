@@ -2242,14 +2242,6 @@ body.has-announcement {
         white-space: nowrap !important;
     }
 
-    /* 3. Ikon Titik Putih: Dikecilkan agar tidak terlalu dominan */
-    .navbar-tabs-ul li::before {
-        content: "•";
-        font-size: 0.6rem !important; /* Ukuran titik dibuat kecil/sedang */
-        margin-right: 5px !important;
-        color: white !important;
-    }
-
     /* 2. Perbaikan Image agar rapat kiri-kanan */
     .image-div {
         width: 100% !important;
