@@ -2219,22 +2219,6 @@ body.has-announcement {
 
 /* Perbaikan mulai dari sini */
 @media screen and (max-width: 768px) {
-    .logo-top img {
-        width: 45px !important;
-        height: 45px !important;
-    }
-    
-    .navbar {
-        height: 60px !important;
-        width: 92% !important;
-        margin: 0 auto !important;
-    }
-
-    .project-box {
-        width: 92% !important;
-        margin: 0 auto !important;
-        padding: 15px !important;
-    }
 
     .footer-avatar-img {
         width: 150px !important;
