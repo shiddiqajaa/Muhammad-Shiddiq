@@ -2219,8 +2219,7 @@ body.has-announcement {
 }
 
 @media screen and (max-width: 768px) {
-    
-    /* 1. Navbar: Ramping dan posisi pas di kiri */
+    /* 1. Pengaturan Container Navbar */
     .navbar-tabs-ul {
         display: flex !important;
         flex-direction: row !important;
@@ -2229,28 +2228,43 @@ body.has-announcement {
         width: 100% !important;
         margin: 0 !important;
         padding: 12px 0 12px 15px !important; 
-        gap: 18px !important; /* Jarak antar menu ditingkatkan agar tidak menumpuk */
+        gap: 18px !important;
         list-style: none !important;
-        overflow-x: auto !important; /* Memungkinkan scroll horizontal jika menu panjang */
+        overflow-x: auto !important;
     }
 
-    /* 2. Teks Menu: Ukuran pas (sedang) dan rapi */
+    /* 2. Style Teks */
     .navbar-tabs-ul li a {
-        font-size: 1.1rem !important; /* Ukuran sedang yang pas untuk dibaca */
+        font-size: 1.4rem !important;
         color: white !important;
         font-weight: 600 !important;
         text-decoration: none !important;
         white-space: nowrap !important;
     }
 
-    /* 3. MENGHILANGKAN TITIK PUTIH */
-    /* Menghapus semua aturan li::before agar titik putih hilang total */
+    /* 3. Menghapus titik bawaan */
     .navbar-tabs-ul li::before {
         content: none !important; 
         display: none !important;
     }
 
-    /* 4. Perbaikan Gambar agar rapat kiri-kanan */
+    /* 4. MUNCULKAN TITIK PUTIH KECIL (Hanya saat class 'activeThistab' ada) */
+    .navbar-tabs-ul li.activeThistab {
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .navbar-tabs-ul li.activeThistab::before {
+        content: "" !important; /* Membuat elemen kosong */
+        display: inline-block !important;
+        width: 8px !important;  /* Ukuran titik putih */
+        height: 8px !important;
+        background-color: white !important;
+        border-radius: 50% !important;
+        margin-right: 8px !important; /* Jarak antara titik dan teks */
+    }
+
+    /* 5. Style lainnya */
     .image-div {
         width: 100% !important;
         padding: 20px 0 0 0 !important;
