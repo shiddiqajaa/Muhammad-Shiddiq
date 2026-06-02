@@ -2210,7 +2210,6 @@ body.has-announcement {
         font-size: 4rem !important;
     }
     
-    /* 3. Merapatkan navbar ke kanan agar tidak ada celah kosong */
     .navbar {
         width: 95% !important; 
         margin: 0 auto !important;
