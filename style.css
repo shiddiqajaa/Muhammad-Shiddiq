@@ -2219,24 +2219,35 @@ body.has-announcement {
 }
 
 /* Perbaikan mulai dari sini */
-/* --- PERBAIKAN TAMPILAN MOBILE (HP) - GANTI SEMUA BLOK @media LAMA DENGAN INI --- */
 @media screen and (max-width: 768px) {
     
-    /* 1. Perbaikan Navbar agar di tengah & proporsional */
     .navbar-tabs-ul {
         display: flex !important;
         flex-direction: row !important;
         justify-content: center !important;
         align-items: center !important;
-        width: 90% !important;
+        width: 100% !important; /* Mengambil lebar yang pas */
         margin: 0 auto !important;
-        padding: 10px 0 !important;
-        gap: 15px !important;
+        padding: 8px 0 !important; /* Dikecilkan agar navbar lebih ramping */
+        gap: 12px !important;      /* Jarak antar menu lebih rapat */
+        list-style: none !important;
     }
 
+    /* 2. Teks Menu: Diperbesar sedikit dan warna putih */
     .navbar-tabs-ul li a {
-        font-size: 0.85rem !important;
+        font-size: 0.95rem !important; /* Sedikit lebih besar dari sebelumnya */
+        color: white !important;
+        font-weight: 500 !important;
+        text-decoration: none !important;
         white-space: nowrap !important;
+    }
+
+    /* 3. Ikon Titik Putih: Dikecilkan agar tidak terlalu dominan */
+    .navbar-tabs-ul li::before {
+        content: "•";
+        font-size: 0.6rem !important; /* Ukuran titik dibuat kecil/sedang */
+        margin-right: 5px !important;
+        color: white !important;
     }
 
     /* 2. Perbaikan Image agar rapat kiri-kanan */
