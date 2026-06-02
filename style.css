@@ -2266,7 +2266,7 @@ body.has-announcement {
 
     .hamburger-menu { 
         margin-left: auto !important;  /* Mendorong ikon ke ujung paling kanan */
-        margin-right: 15px !important; /* Memberi jarak dari pinggir layar */
+        margin-right: 5px !important; /* Memberi jarak dari pinggir layar */
         width: 25px !important;        /* Ukuran sedang (bisa disesuaikan) */
         height: 20px !important;       /* Ukuran sedang */
         display: flex !important;
