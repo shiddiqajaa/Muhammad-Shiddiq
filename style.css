@@ -2231,6 +2231,20 @@ body.has-announcement {
         gap: 20px !important; /* Tambahkan gap agar teks tidak terlalu rapat */
         list-style: none !important;
         overflow-x: auto !important;
+        scrollbar-width: none !important; 
+        -ms-overflow-style: none !important;
+    }
+
+    .navbar-tabs-ul::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    /* 2. Tambahkan ini agar titik tidak nempel ke logo */
+    .navbar-tabs-ul li.activeThistab {
+        display: flex !important;
+        align-items: center !important;
+        margin-left: 0px !important; /* Reset margin */
+        padding-left: 5px !important; /* Beri ruang kecil dari logo */
     }
 
     .navbar {
@@ -2270,15 +2284,14 @@ body.has-announcement {
     /* 4. Titik Putih Aktif (hanya untuk yang memiliki class activeThistab) */
     .navbar-tabs-ul li.activeThistab::before {
         content: "" !important;
-        display: inline-block !important; /* Kembali ke inline-block agar tidak memaksa baris baru */
+        display: block !important; /* Kembali ke inline-block agar tidak memaksa baris baru */
         width: 8px !important; 
         height: 8px !important;
         background-color: white !important;
         border-radius: 50% !important;
-        margin-right: 6px !important; /* Jarak titik ke teks */
+        margin-right: 8px !important; /* Jarak titik ke teks */
         flex-shrink: 0 !important;
-        position: relative !important;
-        vertical-align: middle !important;
+        align-self: center !important;
     }
 
     /* 5. Mengecilkan Box Blur (Navbar) agar tidak terlalu besar */
