@@ -2223,12 +2223,16 @@ body.has-announcement {
     .navbar-tabs-ul {
         display: flex !important;
         flex-direction: row !important;
+        justify-content: flex-start !important;
         align-items: center !important;
-        flex-grow: 1 !important; /* Mengambil sisa ruang */
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 5px 10px !important; 
+        gap: 12px !important; /* Tambahkan gap agar teks tidak terlalu rapat */
+        list-style: none !important;
         overflow-x: auto !important;
         scrollbar-width: none !important; 
         -ms-overflow-style: none !important;
-        margin: 0 10px !important;
     }
 
     .navbar-tabs-ul::-webkit-scrollbar {
@@ -2246,9 +2250,7 @@ body.has-announcement {
     .navbar {
         display: flex !important;
         align-items: center !important;
-        justify-content: space-between !important;
-        width: 100% !important;
-        padding: 5px 5px !important;
+        justify-content: flex-start !important;
         backdrop-filter: blur(15px) !important;
         -webkit-backdrop-filter: blur(15px) !important;
     }
@@ -2266,12 +2268,11 @@ body.has-announcement {
         margin-left: auto !important;  /* Mendorong ikon ke ujung paling kanan */
         margin-right: 5px !important; /* Memberi jarak dari pinggir layar */
         flex-shrink: 0 !important;
-        width: 30px !important;        /* Ukuran sedang (bisa disesuaikan) */
-        height: 25px !important;       /* Ukuran sedang */
+        width: 28px !important;        /* Ukuran sedang (bisa disesuaikan) */
+        height: 22px !important;       /* Ukuran sedang */
         display: flex !important;
         flex-direction: column !important;
         justify-content: space-between !important;
-        margin-right: 0px !important;
         cursor: pointer !important;
     }
 
@@ -2288,7 +2289,7 @@ body.has-announcement {
     .navbar-tabs-ul li a {
         display: flex !important;
         align-items: center !important;
-        font-size: 1.0rem !important;
+        font-size: 1rem !important;
         color: white !important;
         font-weight: 500 !important;
         white-space: nowrap !important;
