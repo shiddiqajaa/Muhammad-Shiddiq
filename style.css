@@ -2216,3 +2216,47 @@ body.has-announcement {
         padding-right: 20px !important;
     }
 }
+
+/* --- PERBAIKAN TAMPILAN MOBILE (HP) --- */
+@media screen and (max-width: 768px) {
+    /* Mencegah layar bergeser ke samping */
+    body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+
+    .logo-top img {
+        width: 45px !important;
+        height: 45px !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+    }
+    
+    .navbar {
+        height: 60px !important;
+        width: 100% !important;
+        padding-right: 15px !important;
+        box-sizing: border-box !important;
+    }
+
+    .project-box {
+        width: 100% !important;
+        margin: 10px 0 !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        box-sizing: border-box !important;
+    }
+
+    .footer-avatar-img {
+        width: 120px !important;
+        height: 120px !important;
+        margin: 0 auto !important;
+    }
+
+    #name {
+        font-size: 2.5rem !important;
+    }
+    #work {
+        font-size: 1.8rem !important;
+    }
+}
