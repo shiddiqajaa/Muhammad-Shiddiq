@@ -2227,30 +2227,32 @@ body.has-announcement {
         align-items: center !important;
         width: 100% !important;
         margin: 0 !important;
-        padding: 12px 0 12px 15px !important; 
-        gap: 20px !important;
+        padding: 10px 15px !important; 
+        gap: 15px !important;
         list-style: none !important;
         overflow-x: auto !important;
     }
 
-    /* 2. Setiap LI sebagai kontainer flex agar titik dan teks sejajar */
-    .navbar-tabs-ul li {
-        display: flex !important;
-        align-items: center !important;
+    /* 2 */
+    .navbar-tabs-ul li a {
+        font-size: 1rem !important;
+        color: white !important;
+        font-weight: 600 !important;
         white-space: nowrap !important;
-        position: relative !important;
     }
 
+    
     /* 3. Menghapus titik bawaan */
     .navbar-tabs-ul li::before {
         content: none !important; 
         display: none !important;
     }
 
+    
     /* 4. Titik Putih Aktif (hanya untuk yang memiliki class activeThistab) */
     .navbar-tabs-ul li.activeThistab::before {
         content: "" !important;
-        display: inline-block !important;
+        display: block !important;
         width: 8px !important; 
         height: 8px !important;
         background-color: white !important;
@@ -2259,24 +2261,39 @@ body.has-announcement {
         flex-shrink: 0 !important; /* Mencegah titik menjadi gepeng */
     }
 
-    /* 5. Style Teks */
-    .navbar-tabs-ul li a {
-        font-size: 1.2rem !important;
-        color: white !important;
-        font-weight: 600 !important;
-        text-decoration: none !important;
+    /* 5. Mengecilkan Box Blur (Navbar) agar tidak terlalu besar */
+    .navbar {
+        padding: 10px !important;
+        backdrop-filter: blur(5px) !important; /* Blur lebih halus */
     }
 
-    /* 6. Style elemen lainnya (Tetap dipertahankan) */
+    /* 6. Setiap LI sebagai kontainer flex agar titik dan teks sejajar */
+    .navbar-tabs-ul li {
+        display: flex !important;
+        align-items: center !important;
+        white-space: nowrap !important;
+        position: relative !important;
+    }
+
+    /* 7. Style elemen lainnya (Tetap dipertahankan) */
     .image-div {
         width: 100% !important;
-        padding: 20px 0 0 0 !important;
+        height: auto !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 !important;
+        padding-top: 20px !important;
     }
+
+    /* 8 */
     .image-div img {
         width: 100% !important;
         height: auto !important;
+        border-top-left-radius: 0 !important;
         border-radius: 10px !important;
     }
+
+    /* 9 */
     .footer-avatar-img {
         width: 90px !important;
         margin: 0 auto !important;
