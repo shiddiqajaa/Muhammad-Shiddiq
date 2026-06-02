@@ -2219,26 +2219,46 @@ body.has-announcement {
 }
 
 /* Perbaikan mulai dari sini */
+/* --- PERBAIKAN TAMPILAN MOBILE (HP) - GANTI SEMUA BLOK @media LAMA DENGAN INI --- */
 @media screen and (max-width: 768px) {
+    
+    /* 1. Perbaikan Navbar agar di tengah & proporsional */
+    .navbar-tabs-ul {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 90% !important;
+        margin: 0 auto !important;
+        padding: 10px 0 !important;
+        gap: 15px !important;
+    }
 
+    .navbar-tabs-ul li a {
+        font-size: 0.85rem !important;
+        white-space: nowrap !important;
+    }
+
+    /* 2. Perbaikan Image agar rapat kiri-kanan */
     .image-div {
-        width: 100% !important;        /* Paksa lebar penuh */
-        height: auto !important;       /* Paksa tinggi otomatis agar tidak terpotong */
-        padding-left: 0 !important;    /* Hapus padding yang membuat gambar menjorok ke kanan */
-        padding-right: 0 !important;   /* Pastikan rapat ke kanan */
-        margin: 0 !important;          /* Hapus margin agar tidak ada celah */
-        padding-top: 20px !important;  /* Beri sedikit jarak atas saja */
+        width: 100% !important;
+        height: auto !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 !important;
+        padding-top: 20px !important;
     }
 
     .image-div img {
-        width: 100% !important;        /* Paksa gambar mengisi lebar kontainer */
+        width: 100% !important;
         height: auto !important;
-        border-top-left-radius: 0 !important; /* Hilangkan lengkungan jika ingin benar-benar rapat */
-        border-radius: 10px !important;       /* Opsional: beri radius kecil saja */
+        border-top-left-radius: 0 !important;
+        border-radius: 10px !important;
     }
-}
 
+    /* 3. Perbaikan Avatar Footer */
     .footer-avatar-img {
         width: 150px !important;
         margin: 0 auto !important;
+    }
 }
