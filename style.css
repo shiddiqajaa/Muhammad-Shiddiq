@@ -2267,8 +2267,9 @@ body.has-announcement {
     .hamburger-menu { 
         margin-left: auto !important;  /* Mendorong ikon ke ujung paling kanan */
         margin-right: 5px !important; /* Memberi jarak dari pinggir layar */
-        width: 25px !important;        /* Ukuran sedang (bisa disesuaikan) */
-        height: 20px !important;       /* Ukuran sedang */
+        flex-shrink: 0 !important;
+        width: 28px !important;        /* Ukuran sedang (bisa disesuaikan) */
+        height: 22px !important;       /* Ukuran sedang */
         display: flex !important;
         flex-direction: column !important;
         justify-content: space-between !important;
@@ -2288,7 +2289,7 @@ body.has-announcement {
     .navbar-tabs-ul li a {
         display: flex !important;
         align-items: center !important;
-        font-size: 1rem !important;
+        font-size: 1.0rem !important;
         color: white !important;
         font-weight: 500 !important;
         white-space: nowrap !important;
