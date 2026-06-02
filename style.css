@@ -2228,7 +2228,7 @@ body.has-announcement {
         width: 100% !important;
         margin: 0 !important;
         padding: 10px 15px !important; 
-        gap: 15px !important;
+        gap: 20px !important; /* Tambahkan gap agar teks tidak terlalu rapat */
         list-style: none !important;
         overflow-x: auto !important;
     }
@@ -2250,10 +2250,13 @@ body.has-announcement {
 
     /* 2 */
     .navbar-tabs-ul li a {
-        font-size: 1rem !important;
+        display: flex !important;
+        align-items: center !important;
+        font-size: 1.1rem !important;
         color: white !important;
         font-weight: 600 !important;
         white-space: nowrap !important;
+        padding-left: 0 !important; /* Reset padding agar tidak menabrak titik */
     }
 
     
@@ -2267,15 +2270,15 @@ body.has-announcement {
     /* 4. Titik Putih Aktif (hanya untuk yang memiliki class activeThistab) */
     .navbar-tabs-ul li.activeThistab::before {
         content: "" !important;
-        display: inline-flex !important;
-        vertical-align: middle !important;
-        margin-bottom: 1px !important;
+        display: inline-block !important; /* Kembali ke inline-block agar tidak memaksa baris baru */
         width: 8px !important; 
         height: 8px !important;
         background-color: white !important;
         border-radius: 50% !important;
-        margin-right: 9px !important; /* Jarak antara titik dan teks */
-        flex-shrink: 0 !important; /* Mencegah titik menjadi gepeng */
+        margin-right: 6px !important; /* Jarak titik ke teks */
+        flex-shrink: 0 !important;
+        position: relative !important;
+        vertical-align: middle !important;
     }
 
     /* 5. Mengecilkan Box Blur (Navbar) agar tidak terlalu besar */
@@ -2288,8 +2291,10 @@ body.has-announcement {
     .navbar-tabs-ul li {
         display: flex !important;
         align-items: center !important;
+        justify-content: center !important; /* Memastikan isi selalu di tengah */
         white-space: nowrap !important;
         position: relative !important;
+        padding-right: 15px !important; /* Memberi ruang antar menu */
     }
 
     /* 7. Style elemen lainnya (Tetap dipertahankan) */
