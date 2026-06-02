@@ -2221,25 +2221,31 @@ body.has-announcement {
 /* Perbaikan mulai dari sini */
 @media screen and (max-width: 768px) {
     
+    /* 1. Navbar agar geser ke kiri mendekati logo */
     .navbar-tabs-ul {
         display: flex !important;
         flex-direction: row !important;
-        justify-content: center !important;
+        justify-content: flex-start !important; /* MENGGESER MENU KE KIRI */
         align-items: center !important;
-        width: 100% !important; /* Mengambil lebar yang pas */
-        margin: 0 auto !important;
-        padding: 8px 0 !important; /* Dikecilkan agar navbar lebih ramping */
-        gap: 12px !important;      /* Jarak antar menu lebih rapat */
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 8px 0 8px 20px !important; /* Padding kiri ditambah agar tidak menempel logo */
+        gap: 15px !important;
         list-style: none !important;
     }
 
-    /* 2. Teks Menu: Diperbesar sedikit dan warna putih */
     .navbar-tabs-ul li a {
-        font-size: 0.95rem !important; /* Sedikit lebih besar dari sebelumnya */
+        font-size: 0.85rem !important;
         color: white !important;
-        font-weight: 500 !important;
-        text-decoration: none !important;
-        white-space: nowrap !important;
+    }
+
+    /* 2. Mengecilkan titik putih */
+    .navbar-tabs-ul li::before {
+        content: "•";
+        font-size: 0.4rem !important; /* Dikecilkan jadi sangat kecil/sedang */
+        margin-right: 5px !important;
+        color: white !important;
+        vertical-align: middle !important;
     }
 
     /* 2. Perbaikan Image agar rapat kiri-kanan */
