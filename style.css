@@ -2218,56 +2218,52 @@ body.has-announcement {
     }
 }
 
-/* Perbaikan mulai dari sini */
 @media screen and (max-width: 768px) {
     
-    /* 1. Navbar agar geser ke kiri mendekati logo */
+    /* 1. Navbar: Ramping dan posisi pas di kiri */
     .navbar-tabs-ul {
         display: flex !important;
         flex-direction: row !important;
-        justify-content: flex-start !important; /* MENGGESER MENU KE KIRI */
+        justify-content: flex-start !important;
         align-items: center !important;
         width: 100% !important;
         margin: 0 !important;
-        padding: 8px 0 8px 20px !important; /* Padding kiri ditambah agar tidak menempel logo */
-        gap: 15px !important;
+        padding: 12px 0 12px 15px !important; 
+        gap: 18px !important; /* Jarak antar menu ditingkatkan agar tidak menumpuk */
         list-style: none !important;
+        overflow-x: auto !important; /* Memungkinkan scroll horizontal jika menu panjang */
     }
 
+    /* 2. Teks Menu: Ukuran pas (sedang) dan rapi */
     .navbar-tabs-ul li a {
-        font-size: 0.85rem !important;
+        font-size: 1.1rem !important; /* Ukuran sedang yang pas untuk dibaca */
         color: white !important;
+        font-weight: 600 !important;
+        text-decoration: none !important;
+        white-space: nowrap !important;
     }
 
-    /* 2. Mengecilkan titik putih */
+    /* 3. MENGHILANGKAN TITIK PUTIH */
+    /* Menghapus semua aturan li::before agar titik putih hilang total */
     .navbar-tabs-ul li::before {
-        content: "•";
-        font-size: 0.4rem !important; /* Dikecilkan jadi sangat kecil/sedang */
-        margin-right: 5px !important;
-        color: white !important;
-        vertical-align: middle !important;
+        content: none !important; 
+        display: none !important;
     }
 
-    /* 2. Perbaikan Image agar rapat kiri-kanan */
+    /* 4. Perbaikan Gambar agar rapat kiri-kanan */
     .image-div {
         width: 100% !important;
-        height: auto !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        margin: 0 !important;
-        padding-top: 20px !important;
+        padding: 20px 0 0 0 !important;
     }
 
     .image-div img {
         width: 100% !important;
         height: auto !important;
-        border-top-left-radius: 0 !important;
         border-radius: 10px !important;
     }
 
-    /* 3. Perbaikan Avatar Footer */
     .footer-avatar-img {
-        width: 150px !important;
+        width: 120px !important;
         margin: 0 auto !important;
     }
 }
