@@ -2266,7 +2266,7 @@ body.has-announcement {
     .navbar-tabs-ul li a {
         display: flex !important;
         align-items: center !important;
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
         color: white !important;
         font-weight: 500 !important;
         white-space: nowrap !important;
