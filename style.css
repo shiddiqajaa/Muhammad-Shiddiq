@@ -2235,7 +2235,7 @@ body.has-announcement {
 
     /* 2. Style Teks */
     .navbar-tabs-ul li a {
-        font-size: 1.2rem !important;
+        font-size: 1.1rem !important;
         color: white !important;
         font-weight: 600 !important;
         text-decoration: none !important;
@@ -2257,11 +2257,11 @@ body.has-announcement {
     .navbar-tabs-ul li.activeThistab::before {
         content: "" !important; /* Membuat elemen kosong */
         display: inline-block !important;
-        width: 8px !important;  /* Ukuran titik putih */
-        height: 8px !important;
+        width: 6px !important;  /* Ukuran titik putih */
+        height: 6px !important;
         background-color: white !important;
         border-radius: 50% !important;
-        margin-right: 8px !important; /* Jarak antara titik dan teks */
+        margin-right: 6px !important; /* Jarak antara titik dan teks */
     }
 
     /* 5. Style lainnya */
